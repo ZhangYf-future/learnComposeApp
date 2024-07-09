@@ -1,5 +1,6 @@
 pluginManagement {
     repositories {
+//        maven { url 'https://nexus20.tclking.com/repository/proxy-nexus-maven-pub/' }
         maven{
             url 'https://maven.aliyun.com/repository/google'
         }
@@ -17,6 +18,7 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+//        maven { url 'https://nexus20.tclking.com/repository/proxy-nexus-maven-pub/' }
         maven{
             url 'https://maven.aliyun.com/repository/google'
         }
@@ -32,3 +34,9 @@ dependencyResolutionManagement {
 }
 rootProject.name = "LearnComposeApp"
 include ':app'
+include ':book1app'
+include ':book1_lib:login_lib'
+include ':book1_lib:mywidget_lib'
+include ':book1_lib:profile_lib'
+include ':book1_lib:base_lib'
+include ':book1_lib:uicomponent'

@@ -1,0 +1,48 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.zyf.book1app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.zyf.book1app"
+        minSdk 23
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "${compose_book1_compiler_version}"
+    }
+}
+
+dependencies {
+    implementation(project(":book1_lib:mywidget_lib"))
+    implementation(project(":book1_lib:login_lib"))
+    implementation(project(":book1_lib:profile_lib"))
+    implementation(project(":book1_lib:uicomponent"))
+    implementation(project(":book1_lib:base_lib"))
+}

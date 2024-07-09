@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ui_component_home_screen_title">UiComponent</string>
+    <string name="ui_component_modifier_size_screen_title">Modifier_Size</string>
+    <string name="modifier_background_screen_title">Modifier_background</string>
+    <string name="modifier_fill_max_screen_title">Modifier_fillMax</string>
+    <string name="modifier_border_padding_screen_title">Modifier_border_padding</string>
+    <string name="click_to_modifier_size_screen">点击导航到Modifier.size学习页面</string>
+    <string name="click_to_modifier_background_screen">点击导航到Modifier.background学习页面</string>
+    <string name="click_to_modifier_fill_max">点击导航到Modifier.fillMax学习页面</string>
+    <string name="click_to_modifier_border_padding">点击导航到Modifier.border和padding学习页面</string>
+    <string name="set_full_color_background">设置纯色背景</string>
+    <string name="set_brush_background">设置渐变色背景</string>
+    <string name="set_fill_max_size">设置宽度和高度都填满父composable</string>
+    <string name="set_fill_max_width">设置宽度填满父composable</string>
+    <string name="set_fill_max_height">设置高度填满父composable</string>
+
+</resources>

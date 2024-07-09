@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="profile_home_screen_title">ProfileHome</string>
+    <string name="click_to_user_info_screen">点击导航到用户信息页面</string>
+    <string name="user_info_screen_title">UserInfo</string>
+    <string name="click_back_profile_home">点击返回到配置信息首页</string>
+    <string name="user_details_screen_title">UserDetails</string>
+    <string name="user_details_screen_content">用户详情页面</string>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_home_screen_title">登录首页</string>
+    <string name="click_to_forget_password_screen">点击跳转到忘记密码页面</string>
+    <string name="forget_password_screen_title">忘记密码</string>
+    <string name="click_back_to_login_screen">点击返回到登录页面</string>
+    <string name="click_to_profile_user_info_screen">点击导航到Profile模块的UserInfoScreen</string>
+    <string name="click_to_profile_user_info_screen_by_deep_links">点击导航到Profile模块的UserInfoScreen(DeepLinks)</string>
+</resources>

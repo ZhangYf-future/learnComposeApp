@@ -1,4 +1,4 @@
-package com.zyf.learncomposeapp
+package com.zyf.learncomposeapp.ui.activity.base
 
 import android.content.res.Configuration
 import android.os.Bundle
@@ -26,7 +26,7 @@ import com.zyf.learncomposeapp.datasource.MessageDataSource
 import com.zyf.learncomposeapp.entity.MessageEntity
 import com.zyf.learncomposeapp.ui.theme.LearnComposeAppTheme
 
-class MainActivity : ComponentActivity() {
+class Basic1Activity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {

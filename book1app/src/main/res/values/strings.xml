@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Book1App</string>
+    <string name="details_screen_title">Details Screen</string>
+    <string name="details_screen_content">详情页面，用来验证Navigation跳转携带参数</string>
+    <string name="click_to_details">点击启动到DetailsScreen</string>
+
+    <string name="click_to_login_home">点击跳转到Login模块首页</string>
+    <string name="click_to_profile_home">点击跳转到Profile模块首页</string>
+    <string name="click_to_ui_component_home">点击跳转到UiComponent模块首页</string>
+</resources>
