@@ -1,20 +1,17 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
 
 android {
-    namespace 'com.zyf.book1app'
+    namespace 'com.zyf.compose.state'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.zyf.book1app"
         minSdk 23
-        targetSdk 34
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -40,10 +37,7 @@ android {
 }
 
 dependencies {
+
     implementation(project(":book1_lib:mywidget_lib"))
-    implementation(project(":book1_lib:login_lib"))
-    implementation(project(":book1_lib:profile_lib"))
-    implementation(project(":book1_lib:uicomponent"))
     implementation(project(":book1_lib:base_lib"))
-    implementation(project(":book1_lib:state"))
 }

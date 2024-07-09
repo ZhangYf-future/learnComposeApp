@@ -24,7 +24,15 @@ import com.zyf.book1app.R
 
 
 @Composable
-fun HomeScreen(toMeScreenListener: () -> Unit, restartHomeScreen: () -> Unit, toDetailsScreen: () -> Unit, toLoginHome: () -> Unit, toProfileHome: () -> Unit, toUiComponentHome: () -> Unit) {
+fun HomeScreen(
+    toMeScreenListener: () -> Unit,
+    restartHomeScreen: () -> Unit,
+    toDetailsScreen: () -> Unit,
+    toLoginHome: () -> Unit,
+    toProfileHome: () -> Unit,
+    toUiComponentHome: () -> Unit,
+    toStateHome: () -> Unit
+) {
     Scaffold(
         topBar = {
             TopAppBar(
@@ -46,36 +54,48 @@ fun HomeScreen(toMeScreenListener: () -> Unit, restartHomeScreen: () -> Unit, to
             Button(onClick = toMeScreenListener) {
                 Text(text = "点击跳转到Me页面")
             }
-            Spacer(modifier = Modifier
-                .fillMaxWidth()
-                .height(10.dp))
+            Spacer(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(10.dp)
+            )
             Button(onClick = restartHomeScreen) {
                 Text(text = "点击继续启动HomeScreen")
             }
-            Spacer(modifier = Modifier
-                .fillMaxWidth()
-                .height(10.dp))
+            Spacer(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(10.dp)
+            )
             Button(onClick = toDetailsScreen) {
                 Text(text = stringResource(id = R.string.click_to_details))
             }
 
-            Spacer(modifier = Modifier
-                .fillMaxWidth()
-                .height(10.dp))
+            Spacer(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(10.dp)
+            )
             Button(onClick = toLoginHome) {
                 Text(text = stringResource(id = R.string.click_to_login_home))
             }
 
-            Spacer(modifier = Modifier
-                .fillMaxWidth()
-                .height(10.dp))
+            Spacer(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(10.dp)
+            )
             Button(onClick = toProfileHome) {
                 Text(text = stringResource(id = R.string.click_to_profile_home))
             }
-            
+
             HeightSpacer(height = 10.dp)
             Button(onClick = toUiComponentHome) {
                 Text(text = stringResource(id = R.string.click_to_ui_component_home))
+            }
+            HeightSpacer(height = 10.dp)
+            Button(onClick = toStateHome) {
+                Text(text = stringResource(id = R.string.click_to_state_home))
             }
         }
     }

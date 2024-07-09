@@ -11,10 +11,20 @@ import androidx.compose.ui.unit.Dp
 
 @Composable
 fun HeightSpacer(height: Dp){
-    Spacer(modifier = Modifier.fillMaxWidth().height(height))
+    Spacer(modifier = Modifier
+        .fillMaxWidth()
+        .height(height))
 }
 
 @Composable
 fun WidthSpacer(width: Dp){
-    Spacer(modifier = Modifier.fillMaxHeight().width(width))
+    Spacer(modifier = Modifier
+        .fillMaxHeight()
+        .width(width))
+}
+
+
+@Composable
+fun WidthSpacer(width: Dp, height: Dp){
+    Spacer(modifier = Modifier.width(width).height(height))
 }

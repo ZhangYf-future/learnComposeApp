@@ -7,4 +7,5 @@
     <string name="click_to_login_home">点击跳转到Login模块首页</string>
     <string name="click_to_profile_home">点击跳转到Profile模块首页</string>
     <string name="click_to_ui_component_home">点击跳转到UiComponent模块首页</string>
+    <string name="click_to_state_home">点击跳转到State模块首页</string>
 </resources>

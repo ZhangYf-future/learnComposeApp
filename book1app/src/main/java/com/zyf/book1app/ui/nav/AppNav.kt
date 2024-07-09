@@ -1,5 +1,6 @@
 package com.zyf.book1app.ui.nav
 
+import android.content.ContentResolver
 import android.util.Log
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.movableContentWithReceiverOf
@@ -15,6 +16,8 @@ import com.zyf.book1.uicomponent.nav.uiComponentNav
 import com.zyf.book1app.ui.screen.DetailsScreen
 import com.zyf.book1app.ui.screen.HomeScreen
 import com.zyf.book1app.ui.screen.MeScreen
+import com.zyf.compose.state.nav.ROUTE_NAME_MODULE_HOME_STATE
+import com.zyf.compose.state.nav.stateNav
 
 @Composable
 fun AppNavigation(){
@@ -38,6 +41,8 @@ fun AppNavigation(){
                 controller.navigate("profile")
             },{
                 controller.navigate(UI_COMPONENT_ROOT_NAV_ROUTE)
+            },{
+                controller.navigate(ROUTE_NAME_MODULE_HOME_STATE)
             })
         }
         composable("me"){
@@ -78,5 +83,6 @@ fun AppNavigation(){
         loginNav(controller)
         profileNav(controller)
         uiComponentNav(controller)
+        stateNav(controller)
     }
 }

@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/book1_lib/login_lib" />
             <option value="$PROJECT_DIR$/book1_lib/mywidget_lib" />
             <option value="$PROJECT_DIR$/book1_lib/profile_lib" />
+            <option value="$PROJECT_DIR$/book1_lib/state" />
             <option value="$PROJECT_DIR$/book1_lib/uicomponent" />
             <option value="$PROJECT_DIR$/book1app" />
           </set>

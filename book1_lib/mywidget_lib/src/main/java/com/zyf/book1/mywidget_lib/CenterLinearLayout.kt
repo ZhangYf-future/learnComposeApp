@@ -23,7 +23,7 @@ fun CenterColumn(modifier: Modifier = Modifier, content: @Composable ColumnScope
 @Composable
 fun CenterRow(modifier: Modifier = Modifier, content: @Composable RowScope.() -> Unit) {
     Row(
-        modifier = modifier.fillMaxSize(),
+        modifier = modifier,
         horizontalArrangement = Arrangement.Center,
         verticalAlignment = Alignment.CenterVertically,
         content = content
