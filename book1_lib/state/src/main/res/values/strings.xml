@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="counter_screen_title">计数器页面</string>
+    <string name="please_input_user_name">请输入用户名称</string>
 </resources>

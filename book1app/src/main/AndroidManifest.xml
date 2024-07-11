@@ -9,6 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnComposeApp" >
 
+        <!--android:configChanges="orientation|screenLayout|screenSize"-->
         <activity
             android:name=".ui.HomeActivity"
             android:exported="true"
