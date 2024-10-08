@@ -2,13 +2,19 @@ pluginManagement {
     repositories {
 //        maven { url 'https://nexus20.tclking.com/repository/proxy-nexus-maven-pub/' }
         maven{
+            url 'https://mirrors.163.com/maven/repository/maven-public/'
+        }
+        maven{
+            url 'https://mirrors.cloud.tencent.com/nexus/repository/maven-public/'
+        }
+        maven{
             url 'https://maven.aliyun.com/repository/google'
         }
         maven{
-            url 'https://maven.aliyun.com/repository/gradle-plugin'
+            url 'https://maven.aliyun.com/repository/central'
         }
         maven{
-            url 'https://maven.aliyun.com/repository/central'
+            url 'https://maven.aliyun.com/repository/gradle-plugin'
         }
         gradlePluginPortal()
         google()
@@ -20,13 +26,19 @@ dependencyResolutionManagement {
     repositories {
 //        maven { url 'https://nexus20.tclking.com/repository/proxy-nexus-maven-pub/' }
         maven{
+            url 'https://mirrors.163.com/maven/repository/maven-public/'
+        }
+        maven{
+            url 'https://mirrors.cloud.tencent.com/nexus/repository/maven-public/'
+        }
+        maven{
             url 'https://maven.aliyun.com/repository/google'
         }
         maven{
-            url 'https://maven.aliyun.com/repository/gradle-plugin'
+            url 'https://maven.aliyun.com/repository/central'
         }
         maven{
-            url 'https://maven.aliyun.com/repository/central'
+            url 'https://maven.aliyun.com/repository/gradle-plugin'
         }
         google()
         mavenCentral()

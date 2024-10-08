@@ -8,23 +8,39 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.dp
 
 @Composable
-fun HeightSpacer(height: Dp){
+fun HeightSpacer(height: Dp) {
+    Spacer(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(height)
+    )
+}
+
+@Composable
+fun HeightSpacer(height: Int) {
     Spacer(modifier = Modifier
         .fillMaxWidth()
-        .height(height))
+        .height(height.dp))
 }
 
 @Composable
-fun WidthSpacer(width: Dp){
-    Spacer(modifier = Modifier
-        .fillMaxHeight()
-        .width(width))
+fun WidthSpacer(width: Dp) {
+    Spacer(
+        modifier = Modifier
+            .fillMaxHeight()
+            .width(width)
+    )
 }
 
 
 @Composable
-fun WidthSpacer(width: Dp, height: Dp){
-    Spacer(modifier = Modifier.width(width).height(height))
+fun WidthSpacer(width: Dp, height: Dp) {
+    Spacer(
+        modifier = Modifier
+            .width(width)
+            .height(height)
+    )
 }
